@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="/main.js"></script>
+    <!-- <script defer src="/side.js"></script> -->
+  </head>
+  <body>
+    <!-- The navigation bar -->
+    <div class="navbar">
+      <a href="#" class="active">Home</a>
+
+      <!-- Add dropdown menus to the navigation bar -->
+      <div class="dropdown">
+        <button class="dropbtn">
+          Products
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Product 1</a>
+          <a href="#">Product 2</a>
+          <a href="#">Product 3</a>
+        </div>
+      </div>
+
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+
+      <!-- Add an icon to the navigation bar for small screens -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- banner -->
+    <div id="bannerBg">
+      <div class="banner" id="banner">
+        <!-- movie title goes here  -->
+        <div class="movieDetai" id="movieDetai">
+          <p class="pg w-border">PG 18</p>
+          <p class="w-border">HD</p>
+          <p id="rRear">
+            <i class="fa-solid fa-calendar-days green"></i>
+          </p>
+          <p id="wTime"><i class="fa-regular fa-clock green"></i> &nbsp;</p>
+        </div>
+        <button id="playBtn" class="play-btn">
+          <i class="fa-solid fa-play"></i> &nbsp; WATCH NOW
+        </button>
+      </div>
+    </div>
+
+    <section class="section-Image1">
+      <div class="movie-container">
+        <h4 class="green">ONLINE STREAMING</h4>
+        <div class="flex">
+          <h1>Upcoming Movies</h1>
+          <div class="space-btn">
+            <form id="genresForm">
+              <label>Choose a Genres</label>
+              <select name="genres" id="genres" placeholder="ckh;klel">
+                <!-- <option value="movie">action</option> -->
+                <!-- Choose a Genres -->
+              </select>
+            </form>
+            <button class="small-btn" id="">TV Shows</button>
+            <button class="small-btn" id="">Movies</button>
+            <button class="small-btn" id="">Anime</button>
+            <!-- <div class="small-btn">
+              <i class="fa-solid fa-chevron-left"></i> |
+              <i class="fa-solid fa-angle-right"></i>
+            </div> -->
+          </div>
+        </div>
+        <div class="movie-card-container">
+          <div class="movie-card">
+            <img
+              src="https://image.tmdb.org/t/p/original//vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
+              alt=""
+            />
+            <div class="title-container flex">
+              <h3 class="title">The perfec</h3>
+              <p class="green">2020</p>
+            </div>
+            <div class="detail flex">
+              <p class="w-border green">HD</p>
+              <div class="flex">
+                <p><i class="fa-regular fa-clock green"></i>&nbsp; 2020</p>
+                &nbsp;&nbsp;&nbsp;
+                <p>
+                  <i class="fa-solid fa-thumbs-up green"></i>&nbsp; 120 mins
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img
+              src="https://image.tmdb.org/t/p/original//qi9r5xBgcc9KTxlOLjssEbDgO0J.jpg"
+              alt=""
+            />
+            <div class="title-container flex">
+              <h3 class="title">The perfec</h3>
+              <p class="green">2020</p>
+            </div>
+            <div class="detail flex">
+              <p class="w-border green">HD</p>
+              <div class="flex">
+                <p><i class="fa-regular fa-clock green"></i>&nbsp; 2020</p>
+                <p>
+                  <i class="fa-solid fa-thumbs-up green"></i>&nbsp; 120 mins
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="/asset/banner.jpg" alt="" />
+            <div class="title-container flex">
+              <h3 class="title">The perfec</h3>
+              <p class="green">2020</p>
+            </div>
+            <div class="detail flex">
+              <p class="w-border green">HD</p>
+              <div class="flex">
+                <p><i class="fa-regular fa-clock green"></i>&nbsp; 2020</p>
+                <p>
+                  <i class="fa-solid fa-thumbs-up green"></i>&nbsp; 120 mins
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="movie-card">
+            <img src="/asset/banner.jpg" alt="" />
+            <div class="title-container flex">
+              <h3 class="title">The perfec</h3>
+              <p class="green">2020</p>
+            </div>
+            <div class="detail flex">
+              <p class="w-border green">HD</p>
+              <div class="flex">
+                <p><i class="fa-regular fa-clock green"></i>&nbsp; 2020</p>
+                <p>
+                  <i class="fa-solid fa-thumbs-up green"></i>&nbsp; 120 mins
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <video width="320" height="220" controls>
+        <source src="https://www.youtube.com/watch?v=39wKmUjSjz4" />
+      </video>
+    </div>
+
+    <!-- Script to toggle the navigation links on small screens -->
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("navbar")[0];
+        if (x.className === "navbar") {
+          x.className += " responsive";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+  </body>
+</html>
